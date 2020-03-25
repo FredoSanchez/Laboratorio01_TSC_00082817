@@ -136,11 +136,15 @@ void transpose(Matrix M, Matrix &T){
 }
 
 void inverse(Matrix M, Matrix &Inv){
-  Matrix traspuesta, adjunta;
-  float real = 1/determinant(M);
+  if(determinant(M) != 0){
+    Matrix traspuesta, adjunta;
+    float real = 1/determinant(M);
 
-  transpose(M, traspuesta);
-  cofactors(traspuesta, adjunta);
+    transpose(M, traspuesta);
+    cofactors(traspuesta, adjunta);
 
-  productRealMatrix(real, adjunta, Inv);
+    productRealMatrix(real, adjunta, Inv);
+  }else{
+    cout<<"No es posible realizar la operacion";
+  }
 }
