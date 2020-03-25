@@ -1,3 +1,6 @@
+/*Código base tomado de: https://github.com/Sortweste/-TSC-Laboratorio1
+Excepto la función inverse
+*/
 #include <vector>
 #include "math.h"
 #include "stdlib.h"
