@@ -145,6 +145,6 @@ void inverse(Matrix M, Matrix &Inv){
 
     productRealMatrix(real, adjunta, Inv);
   }else{
-    cout<<"No es posible realizar la operacion";
+    exit(EXIT_FAILURE);
   }
 }
