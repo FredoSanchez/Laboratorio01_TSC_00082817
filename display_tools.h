@@ -1,3 +1,4 @@
+//Código base tomado de: https://github.com/Sortweste/-TSC-Laboratorio1
 void showVector(Vector b){
     cout << "[\t";
     for(int i=0;i<b.size();i++){
